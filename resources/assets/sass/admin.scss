@@ -1,0 +1,60 @@
+// Fonts - Google Font: Source Sans Pro
+//@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700');
+
+// AdminLTE
+@import '~admin-lte/build/scss/AdminLTE';
+//@import '~admin-lte/build/scss/AdminLTE-core';
+//@import '~admin-lte/build/scss/parts/components';
+
+// Font Awesome
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+
+// vendor packages
+@import '~select2';
+@import '~dropzone/dist/dropzone.css';
+@import '~lightbox2/dist/css/lightbox.css';
+@import '~summernote/dist/summernote-bs4.css';
+@import '~@ttskch/select2-bootstrap4-theme/src/layout';
+@import '~datatables.net-bs4/css/dataTables.bootstrap4.css';
+@import "~pc-bootstrap4-datetimepicker/src/sass/bootstrap-datetimepicker-build";
+@import "~daterangepicker/daterangepicker.css";
+@import '~cropperjs/dist/cropper.css';
+@import '~chart.js/dist/Chart.css';
+
+// titan
+@import 'titan/notify';
+@import 'titan/google_maps';
+
+// overrides - datatables
+table.dataTable {
+    border-collapse: collapse !important;
+}
+
+div.dataTables_wrapper div.dataTables_info {
+    padding-top: 0.45em;
+}
+
+div.dataTables_wrapper div.dataTables_filter input {
+    margin-left: 0px;
+}
+
+div.dataTables_wrapper div.dataTables_filter label {
+    margin-bottom: 0px;
+}
+
+div.dataTables_wrapper div.dataTables_length label {
+    margin-bottom: 0px;
+}
+
+.dt-toolbar-footer .pagination .page-link {
+    padding: 0.3rem 0.75rem;
+}
+table.dataTable.table-sm .sorting:before, table.dataTable.table-sm .sorting_asc:before, table.dataTable.table-sm .sorting_desc:before {
+  right: 1.2em;
+}
+// SortableJS Styles
+.dd-list { min-height: 10px; display: block; position: relative; }
+.dd-item:hover, .dd-item .card { background-color: rgba(0, 123, 255, 0.2); }

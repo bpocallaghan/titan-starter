@@ -1,0 +1,7 @@
+id,icon,name,slug,keyword,summary,created_at,updated_at,deleted_at,created_by,updated_by,deleted_by
+"1","user","User","/","user","","2020-01-23 14:23:30","2020-01-23 14:23:30",,"0","0",
+"2","user-secret","Admin","/admin","admin","","2020-01-23 14:23:30","2020-01-23 14:23:30",,"0","0",
+"3","user-tie","Business Owner","/","business","","2020-01-23 17:32:00","2020-09-22 13:28:37",,"0","1",
+"4","universal-access","Developer","/admin","developer","","2020-01-23 14:23:30","2020-01-23 14:23:30",,"0","0",
+"5","user-circle","Clearing Agent","/","clearing_agent",,"2020-09-22 13:29:15","2020-09-22 13:29:15",,"1","1",
+"6","address-card","Driver","/","driver",,"2020-09-22 13:29:30","2020-09-22 13:34:32",,"1","1",

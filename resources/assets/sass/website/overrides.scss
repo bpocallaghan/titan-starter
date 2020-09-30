@@ -1,0 +1,48 @@
+.hideme {
+  display: none;
+}
+
+header {
+  z-index: 9950;
+}
+
+.modal {
+  z-index: 10050;
+}
+
+.form-control {
+  border-radius: 2px;
+}
+
+.btn, .butn, .btn-style2, .btn-style3 {
+  border-radius: 2px;
+}
+
+.img-browse-max-height {
+  max-height: 250px;
+}
+
+.pagination {
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination span.page-link {
+  float: left;
+  padding: 0 18px;
+  line-height: 40px;
+  text-decoration: none;
+  border: 1px solid #dbdbdb;
+  //border-left-width: 0;
+  background: #fff;
+}
+
+.pagination a.page-link {
+  border-left-width: 1px;
+}
+
+.pagination .page-item.active .page-link {
+  z-index: 3;
+  color: #999;
+   background-color: #f7f7f7;
+}
