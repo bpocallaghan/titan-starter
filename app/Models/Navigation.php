@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
@@ -10,7 +11,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  */
 class Navigation extends AdminModel
 {
-    use SoftDeletes;
+    use HasFactory, SoftDeletes;
 
     protected $table = 'navigations';
 
@@ -24,7 +25,7 @@ class Navigation extends AdminModel
      *
      * @var array
      */
-    static public $rules = [
+    public static $rules = [
         'icon'        => 'required|min:1',
         'name'        => 'required|min:2:max:255',
         'description' => 'required|min:3:max:255',
@@ -67,7 +68,7 @@ class Navigation extends AdminModel
      * @param bool $hidden (if we need to include hidden)
      * @return mixed
      */
-    static public function whereParentIdORM($id, $hidden = false)
+    public static function whereParentIdORM($id, $hidden = false)
     {
         $builder = self::whereParentId($id);
         if (!$hidden) {
