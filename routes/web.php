@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\App\AppController;
+use App\Http\Controllers\Website\HomeController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -16,7 +17,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::redirect('/home', '/');
-Route::redirect('/', '/admin');
 
 /*
 |------------------------------------------
@@ -28,3 +28,12 @@ Route::group(['prefix' => 'auth'], function () {
 
     // Route::any('logout', 'Auth\LoginController@logout')->name('logout');
 });
+
+/*
+|------------------------------------------
+| WEBSITE / PUBLIC
+|------------------------------------------
+*/
+// Route::group('website', function () {
+    Route::get('/', [HomeController::class, 'index'])->name('home');
+// });
