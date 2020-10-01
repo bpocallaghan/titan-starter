@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\Accounts\AdministratorsController;
 use App\Http\Controllers\Admin\Accounts\ClientsController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\LatestActivities\LatestActivitiesController;
@@ -27,8 +28,8 @@ Route::group(['middleware' => ['auth', 'auth.admin'], 'prefix' => 'admin'], func
         Route::resource('clients', ClientsController::class);
 
         // users
-        // Route::get('administrators', 'AdministratorsController@index');
-        // Route::delete('administrators', 'AdministratorsController@destroy');
+        Route::get('administrators', [AdministratorsController::class, 'index']);
+        Route::delete('administrators', [AdministratorsController::class, 'destroy']);
     });
 
     // history
