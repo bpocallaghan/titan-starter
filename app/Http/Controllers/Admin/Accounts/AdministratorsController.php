@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers\Admin\Accounts;
 
-use App\Models\User;
-use App\Models\Role;
 use App\Http\Controllers\Admin\AdminController;
+use App\Models\Role;
+use App\Models\User;
 
 class AdministratorsController extends AdminController
 {
@@ -19,6 +19,6 @@ class AdministratorsController extends AdminController
 
         $items = User::with('roles')->whereRole(Role::$ADMIN)->get();
 
-        return $this->view('accounts.administrators.index', compact('items'));
+        return $this->view('admin.accounts.administrators.index', compact('items'));
     }
 }
