@@ -1,10 +1,15 @@
 {
-    "name": "laravel/laravel",
+    "name": "bpocallaghan/laravel-starter",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "A Laravel Starter project that helps you with the initial setup.",
     "keywords": [
         "framework",
-        "laravel"
+        "laravel",
+        "crud",
+        "titan",
+        "authentication",
+        "roles",
+        "navigation"
     ],
     "license": "MIT",
     "require": {
