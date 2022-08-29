@@ -5,8 +5,8 @@ New Laravel 8 Starter
 
 - [Website Starter](https://github.com/bpocallaghan/titan-starter-website) Laravel 7 Website and Admin Starter
 
-[Preview project here](http://titan.bpocallaghan.co.za)
-- User: github@bpocallaghan.co.za
+[Preview project here](https://bpocallaghan.ie)
+- User: github@bpocallaghan.ie
 - Password: github
 
 ## Features
