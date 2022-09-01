@@ -1,9 +1,6 @@
 # Laravel CMS Starter
 
-TODO
-New Laravel 8 Starter
-
-- [Website Starter](https://github.com/bpocallaghan/titan-starter-website) Laravel 7 Website and Admin Starter
+- [Website Starter](https://github.com/bpocallaghan/titan-starter-website) Laravel 9 Website and Admin Starter
 
 [Preview project here](https://bpocallaghan.ie)
 - User: github@bpocallaghan.ie
